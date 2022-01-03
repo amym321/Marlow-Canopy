@@ -46,7 +46,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "prod_clicky_opt_names": "Absorbency",
+            "prod_clicky_opt_names": "",
             "stock_warning_show": false,
             "stock_warning_limit": 5,
             "show_size_chart": false,
