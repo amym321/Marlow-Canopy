@@ -8,6 +8,7 @@
     },
     "164057530330b120dc": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "1640575303b8486d56-0": {
           "type": "text_block",
@@ -49,6 +50,7 @@
     },
     "16405754970a3f976f": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "1640575497248b53d3-0": {
           "type": "text_block",
@@ -90,6 +92,7 @@
     },
     "164057579287b37f09": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "164057579229cf05cd-0": {
           "type": "text_block",
@@ -131,6 +134,7 @@
     },
     "164057587668385ecb": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "164057587642a515e7-0": {
           "type": "text_block",
@@ -172,6 +176,7 @@
     },
     "1640575935976ef9df": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "It's time to spark some much needed conversation.",
@@ -191,6 +196,7 @@
     },
     "16405760311101b126": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16405760308f43beed-0": {
           "type": "image",
@@ -233,6 +239,7 @@
     },
     "164057615999effa9e": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "1640576159035b4dc4-0": {
           "type": "text_block",
@@ -274,6 +281,7 @@
     },
     "1640576261e1507322": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "1640576261b85f284f-0": {
           "type": "text_block",
@@ -330,6 +338,7 @@
     },
     "16405765828913b76f": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "164057658229d019e0-0": {
           "type": "image",
@@ -372,6 +381,7 @@
     },
     "1640576418ee43ddcb": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16405764189782fc46-0": {
           "type": "image",
