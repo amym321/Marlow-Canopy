@@ -1,1 +1,113 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor_and_type":{"type":"vendor_and_type","disabled":true,"settings":{"prod_show_brand":true,"prod_show_type":true}},"title":{"type":"title","settings":{"heading_h1":true}},"price":{"type":"price","settings":{"show_tax_and_shipping":false}},"rating":{"type":"rating","disabled":true,"settings":{}},"variant_picker":{"type":"variant_picker","settings":{"prod_clicky_opt_names":"Absorbency","stock_warning_show":false,"stock_warning_limit":5,"show_size_chart":false,"size_chart_variant":"Size","size_chart_page":""}},"buy_buttons":{"type":"buy_buttons","settings":{"enable_payment_button":false,"show_pickup_availability":false,"show_backorder_text":true}},"51f1b408-2cd1-4e79-ae2e-040d579f55f2":{"type":"text","settings":{"text":"<p>Both our tampons and lubricant, delivered straight to your door! And, save 10% while you're at it.<\/p>","show_in_quickbuy":false}},"6b10c63b-9b4a-4b03-8b67-9d2a87dabf23":{"type":"accordion","settings":{"title":"Subscriptions","content":"<p><em>Subscribe to get free shipping on all future orders!<\/em><\/p><p><strong>* Shipments are quarterly <\/strong>- you’ll receive 3 months’ supply every 3 months.<\/p><p><strong>* <\/strong>You can <strong>change, skip, or cancel <\/strong>your order at any time.<\/p><p><strong>* <\/strong>Our <strong>combo <\/strong>subscription includes 1 box of each absorbency of tampons (<strong>light, regular, and super<\/strong>).<\/p>","page":"","open":false,"show_in_quickbuy":false}},"bbb40d9d-1a25-4af4-b7d0-ecb1a2184949":{"type":"accordion","settings":{"title":"Bundle & Save","content":"<p>Both our tampons and lubricant, delivered straight to your door! And, save 10% while you're at it.<\/p><p>Goodbye 👋 dry plastic stick, hello smooth comfort.<\/p>","page":"","open":false,"show_in_quickbuy":false}},"d9636e24-13b0-4a78-8d2c-1d27240b1310":{"type":"accordion","settings":{"title":"Marlow Tampons","content":"<p><strong>Ingredients: <\/strong>100% Organic Cotton<\/p><p><strong>* <\/strong>18 compact applicator tampons per box<\/p><p><strong>* <\/strong>Dermatologist tested<\/p><p><strong>*<\/strong> Certified organic cotton <\/p><p><strong>*<\/strong> Free of fragrance, dyes, synthetic fibres, and chlorine bleaching<\/p><p><strong>* <\/strong>Plant-based applicator<\/p><p><strong>* <\/strong>Compostable wrapper<\/p>","page":"","open":false,"show_in_quickbuy":false}},"1b898b29-11c8-4fd8-9991-1f7c3b60063e":{"type":"accordion","settings":{"title":"Marlow Lubricant","content":"<p><strong>The MarLube<\/strong>: a personal lubricant that can be used with Marlow tampons for a smoother insertion experience. Our bottle perfectly coats your tampon with one mess-free dip. This lubricant can be used to both aid in tampon insertion and during intercourse.<\/p><p><strong>Ingredients<\/strong>: Water, aloe barbadensis leaf extract*, sorbitol, hydroxyethyl cellulose, allantoin, lactic acid, tocopherol, potassium sorbate, stevia rebaudiana extract, paeonia albiflora root extract*, passiflora incarnata flower extract*, hyaluronic acid. <em>* Certified Organic Ingredients<\/em><\/p><p><\/p><p><strong>* <\/strong>Water-based lubricant<\/p><p><strong>* <\/strong>pH balanced<\/p><p><strong>* <\/strong>No fragrance<\/p><p><strong>* <\/strong>No parabens<\/p><p><strong>* <\/strong>No petrochemicals<\/p><p><strong>* <\/strong>No silicones<\/p><p><strong>* <\/strong>No glycerin<\/p><p><strong>* <\/strong>No alcohol<\/p>","page":"","open":false,"show_in_quickbuy":false}}},"block_order":["vendor_and_type","title","price","rating","variant_picker","buy_buttons","51f1b408-2cd1-4e79-ae2e-040d579f55f2","6b10c63b-9b4a-4b03-8b67-9d2a87dabf23","bbb40d9d-1a25-4af4-b7d0-ecb1a2184949","d9636e24-13b0-4a78-8d2c-1d27240b1310","1b898b29-11c8-4fd8-9991-1f7c3b60063e"],"settings":{"page_width":"medium","description_below":false,"show_reviews":true,"enable_video_looping":true,"enable_product_image_zoom":true}},"product-recommendations":{"type":"product-recommendations","settings":{"recommendations_title":"You may also like","grid_show_vendor":false,"products_per_row":4}}},"order":["main","product-recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor_and_type": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "prod_show_brand": true,
+            "prod_show_type": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_h1": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "175fd61d-5d55-44f0-8204-9e7f6a32037c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
+            "show_in_quickbuy": false
+          }
+        },
+        "51f1b408-2cd1-4e79-ae2e-040d579f55f2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
+            "show_in_quickbuy": true
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "prod_clicky_opt_names": "Absorbency",
+            "stock_warning_show": false,
+            "stock_warning_limit": 5,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": true
+          }
+        },
+        "0166dd9e-3c0c-4673-a572-ee2236d351e9": {
+          "type": "shopify:\/\/apps\/tabs-by-station\/blocks\/product_tabs_block\/19980fb9-f2ca-4ada-ad36-c0364c3318b8",
+          "settings": {
+            "start_tab_element": "h5",
+            "default_tab": "above",
+            "default_tab_title": "Description",
+            "pro_tabs": true,
+            "layout": "vertical",
+            "layout_breakpoint": 750,
+            "open_first_tab": false,
+            "allow_multiple_open": false,
+            "initialize_tabs": "immediate",
+            "custom_scripts": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor_and_type",
+        "title",
+        "price",
+        "175fd61d-5d55-44f0-8204-9e7f6a32037c",
+        "51f1b408-2cd1-4e79-ae2e-040d579f55f2",
+        "rating",
+        "variant_picker",
+        "buy_buttons",
+        "0166dd9e-3c0c-4673-a572-ee2236d351e9"
+      ],
+      "settings": {
+        "page_width": "medium",
+        "description_below": false,
+        "show_reviews": true,
+        "enable_video_looping": true,
+        "enable_product_image_zoom": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommendations_title": "You may also like",
+        "grid_show_vendor": false,
+        "products_per_row": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}
