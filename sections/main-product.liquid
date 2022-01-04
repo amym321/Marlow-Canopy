@@ -7,6 +7,21 @@
   assign show_app_blocks_in_quickbuy = false
 -%}
 
+<style>
+[data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
+  content: '\2713';
+  font-size: 20px;
+  color: green;
+  padding-right: 12px;
+}
+[data-smartrr-onetime-benefits] [data-smartrr-benefits-onetime]:before {
+  content: '\00D7';
+  font-size: 20px;
+  color: red;
+  padding-right: 12px;
+}
+</style>
+
 <div class="section container product-container product-container--{{ section.settings.page_width }} {% if is_featured_product %}border-top featured-product-section{% endif %}"
      data-section-type="product-template" data-components="accordion">
 
@@ -216,12 +231,12 @@
                 </div>
               {% endif %}
               {% unless product.requires_selling_plan %}
-                <div data-smartrr-choose-sub class="hide">
-                  <div data-smartrr-sub-benefits>
+                <div data-smartrr-choose-sub>
+                  <div data-smartrr-subscription-benefits>
                     <div>3 boxes of tampons, 3 bottles of lubricant</div>
-                    <div data-smartrr-benefits-sub>Delivered every 90 days</div>
-                    <div data-smartrr-benefits-sub>Skip or Cancel Anytime</div>
-                    <div data-smartrr-benefits-sub>Free Shipping</div>
+                    <div data-smartrr-benefits-all>{{ plan.options[0].value }}</div>
+                    <div data-smartrr-benefits-all>Skip or Cancel Anytime</div>
+                    <div data-smartrr-benefits-all>Free Shipping</div>
                   </div>
                 </div>
               {% endunless %}
