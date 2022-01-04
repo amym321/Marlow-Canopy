@@ -11860,3 +11860,80 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
 #shopify-product-reviews .spr-icon-star-half-alt::after {
   clip: rect(0px, 7.5px, 14px, 0px);
 }
+
+/***************************************/
+/******** custom styling - AM ******** */
+/***************************************/
+
+.product-form .selector-wrapper:last-child {
+  margin-bottom: 50px;
+}
+
+/* .pretty-select,
+select,
+.pretty-select:after,
+select:after,  */
+
+/* .replaced:hover,
+.replaced:checked,
+option,
+option:active,
+option:after, */
+.replaced,
+.replaced:after {
+  background-color: #fdf3eb !important;
+  background: #fdf3eb !important;
+  font-family: {{ base_font.family }}, {{ base_font.fallback_families }};
+  color: {{ body_text_col }};
+  border-radius: 25px !important;
+}
+/* .replaced:hover {
+  background-color: #302ba3 !important;
+  background: #302ba3 !important;
+} */
+
+/* .clickybox-replaced,
+.clickybox-replaced:hover,
+.clickybox-replaced:active {
+  background-color: red !important;
+  background: red !important;
+} */
+
+.pretty-select, .pretty-select:after {
+  border-radius: 25px;
+}
+
+/* .pretty-select:active, 
+.pretty-select:after {
+  border-radius: 25px;
+} */
+
+.clickyboxes,.clickyboxes:after, .clickyboxes:active,
+ul, ul:after, ul:active,
+.selector-wrapper ul, .selector-wrapper ul:after,
+.options-wrapper ul, .options-wrapper ul:after,
+.clickybox-replaced,.clickybox-replaced:after,.clickybox-replaced:active, 
+ option, option:after, option:active,
+select, select:after, select:active,
+.option-container1,.option-container1:after, .option-container1:active,
+.option-container2,.option-container2:after, .option-container2:active,
+.options-wrapper
+{
+  color: red !important;
+  /* border-radius: 25px ; */
+  border-radius: 0 0 25px 25px !important; /* flat on top */
+  border-color: tomato;
+  /* position:relative;  */
+  top:-50px;
+  /* margin-top: -100px; */
+}
+
+/* .selector-wrapper ul:hover,
+.options-wrapper ul:hover,
+.clickybox-replaced:hover,
+ option, option:hover,
+select, select:hover
+{
+  background: #302ba3 !important;
+  background-color: #302ba3 !important;
+} */

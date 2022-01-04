@@ -203,6 +203,30 @@
               {% endif %}
 
             {%- when 'variant_picker' -%}
+
+              <!-- code added - am. Benefits text depending on One-Time Purchase or Subscription checked -->
+              <br>
+              {% if product.requires_selling_plan %}
+                <div data-smartrr-choose-otp class="hide">
+                  <div data-smartrr-onetime-benefits>
+                    <div>1 box of tampons, 1 bottle of lubricant</div>
+                    <div data-smartrr-benefits-onetime>Auto-refill deliveries</div>
+                    <div data-smartrr-benefits-onetime>Free Shipping</div>
+                  </div>
+                </div>
+              {% endif %}
+              {% unless product.requires_selling_plan %}
+                <div data-smartrr-choose-sub class="hide">
+                  <div data-smartrr-sub-benefits>
+                    <div>3 boxes of tampons, 3 bottles of lubricant</div>
+                    <div data-smartrr-benefits-sub>Delivered every 90 days</div>
+                    <div data-smartrr-benefits-sub>Skip or Cancel Anytime</div>
+                    <div data-smartrr-benefits-sub>Free Shipping</div>
+                  </div>
+                </div>
+              {% endunless %}
+
+              <!-- code added - am. seperate variants depending on One-Time Purchase or Subscription checked -->
               {% if product.variants.size > 1 %}
                 <div class="option-selectors product-detail__gap-lg"
                      data-box-options="{{ block.settings.prod_clicky_opt_names | escape }}" {{ block.shopify_attributes }}>
@@ -230,13 +254,34 @@
                                for="option-{{ option.name | handle }}">{{ option.name }}</label>
                       {% endif %}
 
-                      <select id="option-{{ option.name | handle }}">
-                        {% for value in option.values %}
-                          <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>
-                            {{ value }}
-                          </option>
-                        {% endfor %}
-                      </select>
+
+                      <div class="options-wrapper">
+                        <select id="option-{{ option.name | handle }}">
+  
+                          {% for value in option.values %}
+  
+                            {% if product.requires_selling_plan %}
+                              {% if value contains 'Subscription' %}
+                                <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>
+                                  {{ value }}
+                                </option>
+                              {% endif %}
+                            {% endif %}
+  
+                            {% unless product.requires_selling_plan %}
+                              {% unless value contains 'Subscription' %}
+                                <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>
+                                  {{ value }}
+                                </option>
+                              {% endunless %}
+                            {% endunless %}
+  
+                          {% endfor %}
+  
+                        </select>
+                      </div>
+  
+
                     </div>
                   {% endfor %}
                 </div>
