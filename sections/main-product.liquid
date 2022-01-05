@@ -221,25 +221,29 @@
 
               <!-- code added - am. Benefits text depending on One-Time Purchase or Subscription checked -->
               <br>
-              {% if product.requires_selling_plan %}
-                <div data-smartrr-choose-otp class="hide">
-                  <div data-smartrr-onetime-benefits>
-                    <div>1 box of tampons, 1 bottle of lubricant</div>
-                    <div data-smartrr-benefits-onetime>Auto-refill deliveries</div>
-                    <div data-smartrr-benefits-onetime>Free Shipping</div>
-                  </div>
-                </div>
-              {% endif %}
-              {% unless product.requires_selling_plan %}
-                <div data-smartrr-choose-sub>
-                  <div data-smartrr-subscription-benefits>
-                    <div>3 boxes of tampons, 3 bottles of lubricant</div>
-                    <div data-smartrr-benefits-all>{{ plan.options[0].value }}</div>
-                    <div data-smartrr-benefits-all>Skip or Cancel Anytime</div>
-                    <div data-smartrr-benefits-all>Free Shipping</div>
-                  </div>
-                </div>
-              {% endunless %}
+              {% for tag in product.tags %}
+                {% if tag contains'benefits' %}
+                  {% if product.requires_selling_plan %}
+                    <div data-smartrr-choose-otp class="hide">
+                      <div data-smartrr-onetime-benefits>
+                        <div>1 box of tampons, 1 bottle of lubricant</div>
+                        <div data-smartrr-benefits-onetime>Auto-refill deliveries</div>
+                        <div data-smartrr-benefits-onetime>Free Shipping</div>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% unless product.requires_selling_plan %}
+                    <div data-smartrr-choose-sub>
+                      <div data-smartrr-subscription-benefits>
+                        <div>3 boxes of tampons, 3 bottles of lubricant</div>
+                        <div data-smartrr-benefits-all>{{ plan.options[0].value }}</div>
+                        <div data-smartrr-benefits-all>Skip or Cancel Anytime</div>
+                        <div data-smartrr-benefits-all>Free Shipping</div>
+                      </div>
+                    </div>
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
 
               <!-- code added - am. seperate variants depending on One-Time Purchase or Subscription checked -->
               {% if product.variants.size > 1 %}

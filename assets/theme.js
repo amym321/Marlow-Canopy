@@ -720,7 +720,7 @@ function _get(target, property, receiver) {if (typeof Reflect !== "undefined" &&
   /// v1.0
   /// Restyling select dropdowns
   $.fn.selectReplace = function (prefix) {
-    var chevronDown = '<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/><path d="M0-.75h24v24H0z" fill="none"/></svg>';
+    var chevronDown = '<svg fill="#fff" height="35" viewBox="0 0 20 20" width="35" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/><path d="M0-.75h24v24H0z" fill="none"/></svg>';
     if (prefix == 'destroy') {
       $(this).off('.selectreplace');
     } else {

@@ -11868,6 +11868,11 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
 .product-form .selector-wrapper:last-child {
   margin-bottom: 50px;
 }
+@media (max-width: 767px) {
+  .product-form .selector-wrapper:last-child {
+    margin-bottom: 0;
+  }
+}
 
 /* .pretty-select,
 select,
@@ -11881,11 +11886,12 @@ option:active,
 option:after, */
 .replaced,
 .replaced:after {
-  background-color: #fdf3eb !important;
-  background: #fdf3eb !important;
+  background-color: {{ site_bg_col }};
+  background: {{ site_bg_col }};
   font-family: {{ base_font.family }}, {{ base_font.fallback_families }};
   color: {{ body_text_col }};
-  border-radius: 25px !important;
+  font-size: 16px;
+  /* border-radius: 25px !important; */
 }
 /* .replaced:hover {
   background-color: #302ba3 !important;
@@ -11900,7 +11906,14 @@ option:after, */
 } */
 
 .pretty-select, .pretty-select:after {
-  border-radius: 25px;
+  background-color: #302ba3 !important;
+  background: #302ba3 !important;
+  color: #fff !important;
+  /* border-radius: 25px; */
+}
+
+.pretty-select svg {
+  fill: #fff !important;
 }
 
 /* .pretty-select:active, 
@@ -11908,7 +11921,7 @@ option:after, */
   border-radius: 25px;
 } */
 
-.clickyboxes,.clickyboxes:after, .clickyboxes:active,
+/* .clickyboxes,.clickyboxes:after, .clickyboxes:active,
 ul, ul:after, ul:active,
 .selector-wrapper ul, .selector-wrapper ul:after,
 .options-wrapper ul, .options-wrapper ul:after,
@@ -11917,7 +11930,7 @@ ul, ul:after, ul:active,
 select, select:after, select:active,
 .option-container1,.option-container1:after, .option-container1:active,
 .option-container2,.option-container2:after, .option-container2:active,
-.options-wrapper
+.options-wrapper */
 {
   color: red !important;
   /* border-radius: 25px ; */
