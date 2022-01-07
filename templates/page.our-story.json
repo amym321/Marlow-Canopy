@@ -6,6 +6,25 @@
       "settings": {
       }
     },
+    "1641578094a8057180": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Our Story",
+        "title_size": 54,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "full_width": false,
+        "no_padding": true,
+        "color_bg": "",
+        "alternate_bg_color": false
+      }
+    },
     "16415235638aa18102": {
       "type": "slideshow",
       "blocks": {
@@ -379,6 +398,7 @@
   },
   "order": [
     "main",
+    "1641578094a8057180",
     "16415235638aa18102",
     "1641524877495d4006",
     "1641525409ba6c4e31",
