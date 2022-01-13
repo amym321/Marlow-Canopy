@@ -23,18 +23,18 @@
             "show_tax_and_shipping": false
           }
         },
+        "175fd61d-5d55-44f0-8204-9e7f6a32037c": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>{{ product.metafields.descriptors.subtitle.value }}<\/strong><\/p>",
+            "show_in_quickbuy": false
+          }
+        },
         "51f1b408-2cd1-4e79-ae2e-040d579f55f2": {
           "type": "text",
           "settings": {
             "text": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
             "show_in_quickbuy": true
-          }
-        },
-        "175fd61d-5d55-44f0-8204-9e7f6a32037c": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
-            "show_in_quickbuy": false
           }
         },
         "rating": {
@@ -82,8 +82,8 @@
         "vendor_and_type",
         "title",
         "price",
-        "51f1b408-2cd1-4e79-ae2e-040d579f55f2",
         "175fd61d-5d55-44f0-8204-9e7f6a32037c",
+        "51f1b408-2cd1-4e79-ae2e-040d579f55f2",
         "rating",
         "variant_picker",
         "buy_buttons",
