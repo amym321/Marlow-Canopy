@@ -17,6 +17,13 @@
             "heading_h1": true
           }
         },
+        "5a82f3b4-6b0d-41ad-ac08-27135d9fe8de": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
+            "show_in_quickbuy": false
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -81,6 +88,7 @@
       "block_order": [
         "vendor_and_type",
         "title",
+        "5a82f3b4-6b0d-41ad-ac08-27135d9fe8de",
         "price",
         "175fd61d-5d55-44f0-8204-9e7f6a32037c",
         "51f1b408-2cd1-4e79-ae2e-040d579f55f2",
